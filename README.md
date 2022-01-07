@@ -6,3 +6,4 @@
 다크넷 http://ngmsoftware.com/bbs/board.php?bo_table=study&wr_id=34&sca=%EB%94%A5%EB%9F%AC%EB%8B%9D <br />
 JSON EDITOR https://jsoneditoronline.org/#right=local.sogeya  <br />
 label https://supervise.ly/ <br />
+python https://www.delftstack.com/ko/howto/python/ <br />
