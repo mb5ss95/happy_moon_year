@@ -10,7 +10,7 @@ python https://www.delftstack.com/ko/howto/python/ <br />
 # Happy_moon_year
 
 - 1만개의 QR코드 이미지를 yolo v5로 학습시켜 QR코드 인식을 해보자.
-- 학습되어 나오는 .pb파일을 안드로이드 폰으로 인식하게 만들거임.
+- 학습되어 나오는 .pb파일을 안드로이드에 심어서 카메라로 QR코드 인식하게 만들거임.
 <br />
 <br />
 
