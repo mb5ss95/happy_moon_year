@@ -33,4 +33,5 @@ python https://www.delftstack.com/ko/howto/python/ <br />
 #### 2-2 이미지 라벨링 파이썬 코드 짜기
 - yolo v5 데이터 포맷은 (class_id center_x center_y width height)로 이루어져 있다. 
 - https://stackoverflow.com/questions/69729085/how-can-i-convert-dataset-annaotations-to-fixedyolov5-format-without-hand-enco 에서 보면 이미지의 전체 해상도를 1, 1로 잡고, center_x center_y width height 값을 비로 잡은 것 같다. 이를 구현하려면 많은 연산이 필요 할 것 같다.
+- label.py로 1만개의 이미지 연산을 통해 라벨링을 완료하였다.
 <br />
