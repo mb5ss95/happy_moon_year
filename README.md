@@ -7,14 +7,14 @@ JSON EDITOR https://jsoneditoronline.org/#right=local.sogeya  <br />
 label https://supervise.ly/ <br />
 python https://www.delftstack.com/ko/howto/python/ <br />
 
-#### Happy_moon_year
+# Happy_moon_year
 
 - 1만개의 QR코드 이미지를 yolo v5로 학습시켜 QR코드 인식을 해보자.
 - 학습되어 나오는 .pb파일을 안드로이드 폰으로 인식하게 만들거임.
 <br />
 <br />
 
-## 1. QR코드 이미지 1만개 다운받기
+###1. QR코드 이미지 1만개 다운받기
 - https://www.kaggle.com/ 에서 이미지를 받아온다.
 - 6 : 2 : 2로 train, test, validation로 분리한다.
 - rename.py로 파일 이름을 변경한다. (ex. train1.jpg, train2.py...)
