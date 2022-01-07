@@ -29,6 +29,8 @@ python https://www.delftstack.com/ko/howto/python/ <br />
 - 매우 귀찮고, 힘든 일에 봉착했음. 물론 나는 라벨링 안 할거임. 언제 다해.. 
 - 이론상이지만 QR코드는 검정색과 흰색으로 이루어져있음. 따라서 파이썬 코드를 짜고, QR이미지의 픽셀 어레이를 불러와 bounding box를 떠볼 생각임.
 - 아니면 그냥 해상도 그대도 라벨링해도 되지 않을까 생각이 듬.
-- yolo v5 데이터 포맷(class_id center_x center_y width height)을 만든다.
 - QR코드는 흰검으로만 이루어져 있어 학습이 왠만하면 잘 될 것 같아서 yolov5s 모델로 해보기로 했다.
+#### 2-2 이미지 라벨링 파이썬 코드 짜기
+- yolo v5 데이터 포맷은 (class_id center_x center_y width height)로 이루어져 있다. 
+- https://stackoverflow.com/questions/69729085/how-can-i-convert-dataset-annaotations-to-fixedyolov5-format-without-hand-enco 에서 보면 이미지의 전체 해상도를 1, 1로 잡고, center_x center_y width height 값을 비로 잡은 것 같다. 이를 구현하려면 많은 연산이 필요 할 것 같다.
 <br />
