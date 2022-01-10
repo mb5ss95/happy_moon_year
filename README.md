@@ -16,12 +16,11 @@ AI https://deview.kr/data/deview/2019/presentation/[115]%EC%96%B4%EB%94%94%EA%B9
 - 1만개의 QR코드 이미지를 yolo v5로 학습시켜 QR코드 인식을 해보자.
 - 학습되어 나오는 .pb파일을 안드로이드에 심어서 카메라로 QR코드 인식하게 만들거임.
 <br />
-<br />
+
 
 ### 1. 컴퓨터 세팅하기
 - yolo v5 다운 받고, cuda 세팅을 한다.
 - https://pytorch.org/get-started/locally/ 에서 알맞은 파이토치를 설치한다.
-<br />
 
 ### 2. QR코드 이미지 1만개 다운받기
 - https://www.kaggle.com/ 에서 이미지를 받아온다.
@@ -39,7 +38,6 @@ AI https://deview.kr/data/deview/2019/presentation/[115]%EC%96%B4%EB%94%94%EA%B9
 - 픽셀 어레이에서 첫 번째로 RGB가 검정(0, 0, 0)일 때의 xy 값을 구하고 전체 해상도와 계산하여 QR코드 정사각형의 가로세로 길이와 중앙 xy값을 찾음.
 - label.py로 1만개의 이미지 연산을 통해 라벨링을 완료하였다.
 - combine.py로 이미지 경로를 텍스트로 만들었다.
-<br />
 
 ### 4. 데이터 학습하기
 - python train.py --data qr.yaml --cfg yolov5s.yaml --batch-size 4 로 데이터 학습 시작 컴퓨터 스펙이 조금 딸려서 배치 사이즈를 4로 함. 에폭은 300
@@ -49,5 +47,6 @@ AI https://deview.kr/data/deview/2019/presentation/[115]%EC%96%B4%EB%94%94%EA%B9
 - python detect.py --source C:/coding/QR/images/test --weights C:/coding/yolov5/runs/train/exp20/weights/best.pt --conf 0.5 로 QR코드 인식을 해보자.
 <br />![test16](https://user-images.githubusercontent.com/60500325/148716836-3a7dd998-eeca-4bac-8aa1-b1a6c46185ec.jpg)
 <br />
-- 와 잘 된건지 안된건지 잘 모르겠다. 우려되는 것은 QR코드의 오른쪽 아래를 특징으로 잡은 것 같은데.. 이것만으로 스캔이 잘 될지는 의문임.. 추후 확인이 필요할듯
+- 와 잘 된건지 안된건지 잘 모르겠다. 인식은 너무나도 잘 되는데 우려되는 것은 QR코드의 오른쪽 아래를 특징으로 잡은 것 같은데.. 이것만으로 스캔이 잘 될지는 의문임.. 추후 확인이 필요할듯
+- 왠지 다시 학습해야 될 것 같은 느낌이 스멀스멀 듬..컴퓨터에게 휴식을 주고 난 후에 진행해야 할듯
 <br />
