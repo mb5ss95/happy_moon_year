@@ -44,9 +44,9 @@ AI https://deview.kr/data/deview/2019/presentation/[115]%EC%96%B4%EB%94%94%EA%B9
 - 17시간 정도 끝에 weights를 얻었다.
 
 ### 5. 데이터 확인하기
+<br />![test16](https://user-images.githubusercontent.com/60500325/148716836-3a7dd998-eeca-4bac-8aa1-b1a6c46185ec.jpg)
+<br />
 - python detect.py --source C:/coding/QR/images/test --weights C:/coding/yolov5/runs/train/exp20/weights/best.pt --conf 0.5 로 QR코드 인식을 해보자.
 - 와 잘 된건지 안된건지 잘 모르겠다. 인식은 정말 잘 되지만 우려되는 것은 인식 범위를 qr코드의 전체가 아닌 오른쪽 아래로 잡는다 것이다.. 이것만으로 스캔이 잘 될지는 의문임.. 추후 확인이 필요할듯
 - 왠지 다시 학습해야 될 것 같은 느낌이 스멀스멀 듬..컴퓨터에게 휴식을 주고 난 후에 진행해야 할듯
-<br />![test16](https://user-images.githubusercontent.com/60500325/148716836-3a7dd998-eeca-4bac-8aa1-b1a6c46185ec.jpg)
 <br />
-
