@@ -38,4 +38,12 @@ AI https://deview.kr/data/deview/2019/presentation/[115]%EC%96%B4%EB%94%94%EA%B9
 - https://stackoverflow.com/questions/69729085/how-can-i-convert-dataset-annaotations-to-fixedyolov5-format-without-hand-enco 에서 보면 이미지의 전체 해상도를 1, 1로 잡고, center_x center_y width height 값을 비로 잡은 것 같다. 이를 구현하려면 연산이 필요 할 것 같다.
 - 픽셀 어레이에서 첫 번째로 RGB가 검정(0, 0, 0)일 때의 xy 값을 구하고 전체 해상도와 계산하여 QR코드 정사각형의 가로세로 길이와 중앙 xy값을 찾음.
 - label.py로 1만개의 이미지 연산을 통해 라벨링을 완료하였다.
+- combine.py로 이미지 경로를 텍스트로 만들었다.
+<br />
+### 4. 데이터 학습하기
+- python train.py --data qr.yaml --cfg yolov5s.yaml --batch-size 4 로 데이터 학습 시작 컴퓨터 스펙이 조금 딸려서 배치 사이즈를 4로 함. 에폭은 300
+- 17시간 정도 끝에 weights를 얻었다.
+
+### 5. 데이터 확인하기
+- python detect.py --source C:/coding/QR/images/test --weights C:/coding/yolov5/runs/train/exp20/weights/best.pt --conf 0.5 로 QR코드 인식을 해보자.
 <br />
