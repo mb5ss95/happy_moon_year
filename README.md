@@ -40,10 +40,13 @@ AI https://deview.kr/data/deview/2019/presentation/[115]%EC%96%B4%EB%94%94%EA%B9
 - label.py로 1만개의 이미지 연산을 통해 라벨링을 완료하였다.
 - combine.py로 이미지 경로를 텍스트로 만들었다.
 <br />
+
 ### 4. 데이터 학습하기
 - python train.py --data qr.yaml --cfg yolov5s.yaml --batch-size 4 로 데이터 학습 시작 컴퓨터 스펙이 조금 딸려서 배치 사이즈를 4로 함. 에폭은 300
 - 17시간 정도 끝에 weights를 얻었다.
 
 ### 5. 데이터 확인하기
 - python detect.py --source C:/coding/QR/images/test --weights C:/coding/yolov5/runs/train/exp20/weights/best.pt --conf 0.5 로 QR코드 인식을 해보자.
+![test16](https://user-images.githubusercontent.com/60500325/148716836-3a7dd998-eeca-4bac-8aa1-b1a6c46185ec.jpg)
+- 와 잘 된건지 안된건지 잘 모르겠다. 우려되는 것은 QR코드의 오른쪽 아래를 특징으로 잡은 것 같은데.. 이것만으로 스캔이 잘 될지는 의문임.. 추후 확인이 필요할듯
 <br />
