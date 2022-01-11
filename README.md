@@ -51,11 +51,14 @@ AI https://deview.kr/data/deview/2019/presentation/[115]%EC%96%B4%EB%94%94%EA%B9
 - 와 잘 된건지 안된건지 잘 모르겠다. 인식은 정말 잘 되지만 우려되는 것은 인식 범위를 qr코드의 전체가 아닌 오른쪽 아래로 잡는다 것이다.. 이것만으로 스캔이 잘 될지는 의문임.. 추후 확인이 필요할듯
 - 왠지 다시 학습해야 될 것 같은 느낌이 스멀스멀 듬.. 컴퓨터에게 휴식을 주고 난 후에 진행해야 할듯
 
-#### 5-1 QR 부분만 라벨링하기
+### 6. 데이터 다시 학습하기
+- python train.py --data qr.yaml --cfg yolov5s.yaml --batch-size 4 --img 410 --epochs 50 으로 에폭과 이미지 사이즈를 변경하여 학습 시켜보자
+
+#### 6-1 QR 부분만 라벨링하기
 - batch 4, epochs 300 size 640 △
 - batch 4, epochs 50 size 640 △
 - batch 4, epochs 50 size 410 
 
-#### 5-1 이미지 전체 라벨링하기
+#### 6-1 이미지 전체 라벨링하기
 - batch 4, epochs 100 size 640
 <br />
