@@ -66,6 +66,7 @@ AI https://deview.kr/data/deview/2019/presentation/[115]%EC%96%B4%EB%94%94%EA%B9
 - python train.py --data qr.yaml --cfg yolov5m.yaml --batch-size 4 --img 410 --epochs 20
 - batch 4, epochs 20 size 410 △
 - 아 역시 원하는 결과를 얻을 수가 없당. 다음은 이미지 전체를 라벨링해서 학습시켜야겠음.
+- 문득 라벨링이 잘못되었나 생각이 듬. 한번 수정해볼 필요가 있음
 
 #### 6-3 이미지 전체 라벨링하기
 - batch 4, epochs 20 size 640
