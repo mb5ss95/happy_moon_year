@@ -58,9 +58,16 @@ AI https://deview.kr/data/deview/2019/presentation/[115]%EC%96%B4%EB%94%94%EA%B9
 - batch 4, epochs 300 size 640 △
 - batch 4, epochs 50 size 640 △
 - batch 4, epochs 20 size 410 △
+- batch 4, epochs 20 size 210 △
 - 여전히 오른쪽 아래가 인식됨. 다음은 이미지 전체를 라벨링해서 학습시켜야겠음.
 - 에폭 수는 20 이상 되면 loss가 거의 비슷한것 같아서 다음은 계속 20 에폭으로 학습 시켜보려고함.
 
-#### 6-1 이미지 전체 라벨링하기
+#### 6-2 yolov5 다른 모델 사용하기
+- python train.py --data qr.yaml --cfg yolov5m.yaml --batch-size 4 --img 410 --epochs 20
+- batch 4, epochs 20 size 410
+
+#### 6-3 이미지 전체 라벨링하기
 - batch 4, epochs 20 size 640
+<br />
+
 <br />
