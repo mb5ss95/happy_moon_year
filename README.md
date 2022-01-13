@@ -74,6 +74,8 @@ AI https://deview.kr/data/deview/2019/presentation/[115]%EC%96%B4%EB%94%94%EA%B9
 - batch 4, epochs 20 size 410 ○
 - 오 6번만의 시도에서 완벽하게 원하는 결과를 얻었다!!!!
 
+### 7. 안드로이드 프로그래밍하기
+- MVMM 스타일로 코딩해보려고 한다.
 
 <br />
 
